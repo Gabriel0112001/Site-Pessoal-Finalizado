@@ -134,7 +134,7 @@ a {
 }
 
 .titulo{
-  transform: scale(0.2) translateX(50vw);
+  transform: scale(0.2);
   opacity: 0;
   transition: all 2s;
   animation: 1.2s ease 0.5s animacao-titulo forwards;
