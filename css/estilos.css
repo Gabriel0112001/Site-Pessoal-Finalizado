@@ -1,0 +1,290 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/background.jpg');
+  background-size: auto 100vh; 
+  font-family: 'Bitter', serif;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  /*! background-color: white; */
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: left;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+.menu a {
+  
+  display: block;
+  padding: 10px 20px;
+  background-color: #bb1818;
+  opacity: 0.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.menu a:active,
+.menu a:hover {
+	border-radius: 1em;
+	transition: 0.4s ease;
+	margin-left: 0.5em;
+	opacity: 1;
+	margin-right: 0.5em;
+}
+
+.site-subtitle, 
+.site-title {
+  color: #cac8c8;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 3em;
+  font-family: 'Baloo 2', cursive;
+}
+
+.site-subtitle {
+ font-family: 'B612 Mono', monospace;
+ line-height: 1.8em;
+ font-size: 1.5em;
+}
+
+.bem-vindo {
+  line-height: 1.5em;
+  margin-top: 1em;
+	font-size: 0.8em;
+	color: #cac8c8;
+	text-align: center;
+	font-family: 'Baloo 2', cursive;
+	font-size: 1em;
+}
+
+.site-title:active,
+.site-title:hover {
+	transition: 1s ease;
+	font-size: 3.5em;
+}
+.site-subtitle:active,
+.site-subtitle:hover {
+	transition: 1s ease;
+	font-size: 1.8em;
+}
+
+.bem-vindo:active,
+.bem-vindo:hover {
+	transition: 1s ease;
+	font-size: 1.1em;
+}
+
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d6d7e1;
+}
+
+.titulo{
+  transform: scale(0.2) translateX(50vw);
+  opacity: 0;
+  transition: all 2s;
+  animation: 1.2s ease 0.5s animacao-titulo forwards;
+}
+
+@keyframes animacao-titulo{
+  0%{
+
+  }
+  100%{
+    transform: scale(1) translate(0);
+    opacity: 1;
+  }
+}
+
+.portfolio h2 {
+  font-family: 'B612 Mono', monospace;
+  color: black;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sobre,
+.contato {
+	padding: 2em;
+  min-height: 58vh;
+  
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sobre {
+  background-color: #0c0c2d;
+}
+
+.sobre p {
+  color: whitesmoke;
+  font-size: 13px;
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 1em;
+}
+
+.sobre .debian {
+  float: left;
+  margin-right: 1em;
+}
+
+.sobre .avatar img {
+  width: 220px;
+  height: auto;
+  border-radius: 30%;
+}
+
+.sobre h2,
+.contato h2 {
+	font-family: 'B612 Mono', monospace;
+	color: white;
+	margin: 1.8em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 360px) {
+  .portfolio .grid {
+    grid-template-columns: 310px;
+	justify-content: center;
+  }
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 480px;
+	justify-content: center;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: 790px;
+    align-content: center;
+    justify-content: center;
+    
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+
+.img-portfolio {
+  height: auto;
+  width: 280px;
+  border-radius: 1em;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+.img-portfolio:active,
+.img-portfolio:hover {
+	transition: 0.4s ease;
+	transform: scale(.8);
+	
+}
+
+.sobre a {
+  color: gray;
+}
+.contato a{
+	color: white;
+	font-size: 2em;
+	margin: .5em;
+	
+}
+
+.sobre a:active,
+.sobre a:hover,
+.contato a:active,
+.contato a:hover {
+	text-decoration: none;
+	transition: 0.4s ease;
+	opacity: 1;
+	text-shadow: 0 0 10px white;
+}
+
+.contato .grid {
+	justify-content: center;
+	display: flex;
+}
+
+.frase {
+  font-style: italic;
+  display: grid;
+  text-align: right;
+}
