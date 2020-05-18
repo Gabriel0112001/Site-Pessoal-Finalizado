@@ -169,7 +169,7 @@ a {
 .sobre,
 .contato {
 	padding: 2em;
-  min-height: 58vh;
+  min-height: 20vh;
   
 
 }
@@ -307,7 +307,6 @@ a {
 
 footer {
 	height: 40px;
-	margin-top: -40px;
 }
 
 footer p {
