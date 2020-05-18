@@ -51,7 +51,9 @@ header {
 
 .menu ul {
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
+  background-color: #bf1b1b;
+  border-radius: 2em;
 }
 
 .menu li {
@@ -62,12 +64,11 @@ header {
   
   display: block;
   padding: 10px 20px;
-  background-color: #bb1818;
-  opacity: 0.8;
+  
 }
 
 a {
-  color: black;
+  color: #d8d7d7;
   text-decoration: none;
   
 }
@@ -76,9 +77,8 @@ a {
 .menu a:hover {
 	border-radius: 1em;
 	transition: 0.4s ease;
-	margin-left: 0.5em;
-	opacity: 1;
-	margin-right: 0.5em;
+	background-color: #ee0d0d;
+	color: #fbfbfb;
 }
 
 .site-subtitle, 
@@ -110,7 +110,7 @@ a {
 
 .site-title:active,
 .site-title:hover {
-	transition: 1s ease;
+	transition: 0.4s ease;
 	font-size: 3.5em;
 }
 .site-subtitle:active,
