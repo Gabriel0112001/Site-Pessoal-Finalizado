@@ -304,3 +304,14 @@ a {
   display: grid;
   text-align: right;
 }
+
+footer {
+	height: 40px;
+	margin-top: -40px;
+}
+
+footer p {
+	color: whitesmoke;
+	font-size: 0.8em;
+	text-align: center;
+}
